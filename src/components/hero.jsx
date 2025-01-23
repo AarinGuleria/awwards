@@ -1,8 +1,11 @@
+import { useState } from "react";
+
 const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(1);
+    const [hasClicked, setHasClicked] = useState(false);
 
     const handleMinVdClick = () => {
-        
+
     }
 
   return (
