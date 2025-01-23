@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        zentry: ["Zentry", "sans-serif"],
+        general: ["General", "sans-serif"],
+        'circular-web': ['circular-web', 'sans-serif'],
+        'robert-regular': ['robert-regular', 'sans-serif'],
+        'robert-medium': ['robert-medium', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }
