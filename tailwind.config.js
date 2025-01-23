@@ -12,6 +12,13 @@ export default {
         'circular-web': ['circular-web', 'sans-serif'],
         'robert-regular': ['robert-regular', 'sans-serif'],
         'robert-medium': ['robert-medium', 'sans-serif'],
+      },
+      colors: {
+        blue: {
+          50: '#DFDFF0',
+          75: '#DFDFF2',
+          100: '#F0F'
+        }
       }
     },
   },
