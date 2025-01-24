@@ -30,7 +30,7 @@ const Hero = () => {
                     <div onClick={handleMinVdClick} className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100">
                         <video 
                             ref={nextVideoRef}
-                            src={getVideoSrc(currentIndex + 1)}
+                            src={getVideoSrc(upcomingVideoIndex)}
                             loopmuted
                             id="current-video"
                             className="size-64 origin-center scale-150 object-cover object-center"
@@ -38,7 +38,27 @@ const Hero = () => {
                         />
                     </div>
                 </div>
+
+                <video 
+                    ref={nextVideoRef}
+                    src={getVideoSrc(currentIndex)}
+                    loop
+                    mute
+                    id="next-video"
+                    className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
+                    onLoadedData={handleVideoLoad}
+                />
+
+                <video 
+                    src={getVideoSrc(currentIndex === totalvideos - 1 ? 1 : currentIndex )}
+                    autoPlay
+                    muted
+                    loop
+                    className="absolute-center left-0 top-0 size-full object-cover object-center"
+                    onLoadedData={handleVideoLoad}
+                />
             </div>
+            
         </div>
     </div>
   )
