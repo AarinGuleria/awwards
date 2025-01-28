@@ -4,13 +4,17 @@ import { TiLocationArrow } from 'react-icons/ti';
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';
 
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(1);
     const [hasClicked, setHasClicked] = useState(false);
     const [isLoading, setIsLoading] = useState(true); 
     const [loadedVideos, setLoadedVideos] = useState(0);
 
-    const totalvideos = 3;
+    const totalvideos = 4;
     const nextVideoRef = useRef(null);
 
     const handleVideoLoad = () => {
