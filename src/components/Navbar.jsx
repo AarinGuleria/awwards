@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import gsap from "gsap";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
@@ -84,9 +83,8 @@ const NavBar = () => {
           {/* Navigation Links and Audio Button */}
           <div className="flex h-full items-center">
             <div className="hidden md:block">
-              {navItems.map((item, index) => (
+              {navItems.map((item) => (
                 <a
-                  key={index}
                   href={`#${item.toLowerCase()}`}
                   className="nav-hover-btn"
                 >
@@ -108,12 +106,8 @@ const NavBar = () => {
               {[1, 2, 3, 4].map((bar) => (
                 <div
                   key={bar}
-                  className={clsx("indicator-line", {
-                    active: isIndicatorActive,
-                  })}
-                  style={{
-                    animationDelay: `${bar * 0.1}s`,
-                  }}
+                  className={`indicator-line ${ isIndicatorActive ? "active" : ""}`} style={{
+                    animationDelay: `${bar * 0.1}s`}}
                 />
               ))}
             </button>
