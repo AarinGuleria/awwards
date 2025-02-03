@@ -1,3 +1,11 @@
+const BentoTilt = ({ children, className = '' }) => {
+  return 
+  <div>
+    {children}
+  </div>
+};
+
+
 const BentoCard = ({ src, title, descripition }) => {
   return (
     <div className="relative size-full">
