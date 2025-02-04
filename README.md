@@ -1,8 +1,56 @@
-# React + Vite
+# 🎮 Zentry - Epic Gaming Adventure
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Zentry Game Banner](path/to/banner-image.png)
 
-Currently, two official plugins are available:
+Welcome to the official website repository for Zentry - where epic gaming meets stunning web animation!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+
+- 🎯 Immersive animated UI built with GSAP
+- 🎨 Sleek, modern design using Tailwind CSS
+- ⚡ Lightning-fast performance with React.js & Vite
+- 📱 Fully responsive across all devices
+- 🌈 Smooth page transitions and dynamic content loading
+
+## 🛠️ Tech Stack
+
+- **React.js** - Frontend framework
+- **Vite** - Build tool
+- **Tailwind CSS** - Styling
+- **GSAP** - Animations
+- **React Router** - Navigation
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/awwards.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd awwards
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Create a `.env` file in the root directory and add necessary environment variables:
+
+   ```env
+   VITE_API_URL=your_api_url_here
+   ```
+
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+
+
+
