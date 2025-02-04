@@ -66,7 +66,7 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/aaringuleria/awwards.git
-cd award-winning-website
+cd awwards
 ```
 
 **Installation**
