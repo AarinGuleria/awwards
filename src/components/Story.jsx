@@ -1,13 +1,21 @@
 import React, { useRef } from 'react'
 import AnimatedTitle from './AnimatedTitle'
 import gsap from 'gsap'
+import RoundedCorners from './RoundedCorners';
 
 const Story = () => {
 
 const frameRef = useRef('null');  // Reference to the image frame
 
 const handleMouseLeave = () => {
+  const element = frameRef.current;
 
+  gsap.to(element, {
+    duration: 0.3,
+    rotateX: 0,
+    rotateY: 0,
+    ease: 'power1.inOut',
+  })
 };
 
 const handleMouseMove = (e) => {
@@ -61,9 +69,11 @@ const handleMouseMove = (e) => {
                       alt="Entrance"
                       className='object-contain'
                     />
-
                   </div>
                 </div>
+
+                <RoundedCorners />
+                
               </div>
             </div>
         </div>
