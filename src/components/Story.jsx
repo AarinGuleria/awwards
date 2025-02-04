@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import AnimatedTitle from './AnimatedTitle'
 import gsap from 'gsap'
 import RoundedCorners from './RoundedCorners';
+import Button from './Button';
 
 const Story = () => {
 
@@ -73,7 +74,15 @@ const handleMouseMove = (e) => {
                 </div>
 
                 <RoundedCorners />
-                
+
+              </div>
+            </div>
+
+            <div className='-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end'>
+              <div className='flex h-full w-fit flex-col items-center md:items-start'>
+                <p className='mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start'>Where realms converge, lies Zentry and the boundless pillar. Discover its secrets and shape your fate amidst infinite opportunities.</p>
+
+                <Button id="realm-button" title="discover prologue" containerClass="mt-5"/>
               </div>
             </div>
         </div>
