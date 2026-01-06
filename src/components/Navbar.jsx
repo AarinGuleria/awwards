@@ -85,6 +85,7 @@ const NavBar = () => {
             <div className="hidden md:block">
               {navItems.map((item) => (
                 <a
+                  key={item}
                   href={`#${item.toLowerCase()}`}
                   className="nav-hover-btn"
                 >
@@ -106,8 +107,12 @@ const NavBar = () => {
               {[1, 2, 3, 4].map((bar) => (
                 <div
                   key={bar}
-                  className={`indicator-line ${ isIndicatorActive ? "active" : ""}`} style={{
-                    animationDelay: `${bar * 0.1}s`}}
+                  className={`indicator-line ${
+                    isIndicatorActive ? "active" : ""
+                  }`}
+                  style={{
+                    animationDelay: `${bar * 0.1}s`,
+                  }}
                 />
               ))}
             </button>
